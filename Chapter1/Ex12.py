@@ -1,0 +1,5 @@
+weight = float(input("Nhập cân nặng của bạn (kg): "))
+height = float(input("Nhập chiều cao của bạn (m): "))
+bmi = weight / (height ** 2)
+print(f"Với cân nặng {weight}kg và chiều cao {height}m:")
+print(f"Chỉ số BMI của bạn là: {bmi:.2f}")
