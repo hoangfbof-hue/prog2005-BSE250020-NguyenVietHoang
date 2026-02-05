@@ -1,0 +1,8 @@
+so = int(input("Nhập một số từ 1 đến 9: "))
+if 1 <= so <= 9:
+    print(f"--- Bảng cửu chương {so} ---")
+    for i in range(1, 10):
+        ket_qua = so * i
+        print(f"{so} x {i} = {ket_qua}")
+else:
+    print("Số bạn nhập không hợp lệ! Vui lòng nhập từ 1 đến 9.")
