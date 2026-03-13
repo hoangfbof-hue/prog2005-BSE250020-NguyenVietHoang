@@ -15,7 +15,7 @@ class Product:
             self._price = value
         else:
             print(f"Lỗi: Giá của '{self.name}' phải lớn hơn 0! (Đang cố gán: {value})")
-            self._price = 1.0  # Gán giá trị mặc định tối thiểu nếu lỗi
+            self._price = 1.0 
 
     def __str__(self):
         """Định nghĩa cách in thông tin đối tượng"""
