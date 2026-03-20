@@ -15,4 +15,4 @@ plt.xlabel('Trục X', fontsize=12)
 plt.ylabel('Trục Y', fontsize=12)
 plt.grid(True, linestyle=':', alpha=0.6)
 plt.legend(loc='best', fontsize=11)
-plt.
+plt.show()
