@@ -1,12 +1,11 @@
-def luu_chuoi_vao_file(ten_file="data.txt"):
-    noi_dung = input("Nhập chuỗi ký tự bạn muốn lưu: ")
-
+def luu_file():
+    chuoi_nhap = input("Nhập chuỗi ký tự: ")
+    f = open("data.txt", "a", encoding="utf-8")
+    
     try:
-        with open(ten_file, "w", encoding="utf-8") as f:
-            f.write(noi_dung)
-        
-        print(f"\nThành công! Nội dung đã được lưu vào file: {ten_file}")
-
-    except Exception as e:
-        print(f"Đã xảy ra lỗi khi ghi file: {e}")
-luu_chuoi_vao_file("ket_qua.txt")
+        print(chuoi_nhap, file=f)
+        print("Đã lưu dữ liệu thành công.")
+    finally:
+        f.close()
+        print("File đã được đóng.")
+luu_file()
